@@ -1,0 +1,254 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,400;0,500;0,900;1,400&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+.max_width {
+    width: 100%;
+    max-width: 80%;
+    margin: 0px auto;
+}
+ 
+.sproutquiz{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./Image/pexels-pixabay-219794.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sproutquiz-container{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aquamarine;
+    background-color: black;
+    max-height: 60vh;
+    padding-top: 15%;
+    
+
+    
+}
+.sproutquiz-container-title{
+    font-weight: 800;
+    font-size: 40px;
+    
+}
+.sproutquizapp-container-text {
+    width: 50%;
+    margin: 50px 0px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+.centered-text{
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+.sproutquiz-container-link{
+    display: flex;
+    margin-top: 35%;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #d0e6ab;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+@keyframes glowing {
+    0% {
+      background-color: #d6ea54;
+      box-shadow: 0 0 5px #d6ea54;
+    }
+
+    50% {
+      background-color: #d5f234;
+      box-shadow: 0 0 20px #d5f234;
+    }
+
+    100% {
+      background-color: #e8ef0d;
+      box-shadow: 0 0 5px #e8ef0d;
+    }
+  }
+  .quizapp-container-link {
+    animation: glowing 1300ms infinite;
+}
+
+@media (max-width: 768px) { 
+   .sproutquizapp-container-title {
+        font-size: 30px;
+    }
+    
+    .sproutquizapp-container-text {
+        width: 100%;
+        margin: 30px 0px;
+        font-size: 18px;
+    }
+
+   
+    .sproutquizapp-container-link {
+        margin-top: 60px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        font-size: 15px;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+    .sproutquizapp-container-title {
+        font-size: 40px;
+    }
+    
+    .sproutquizapp-container-text {
+        width: 90%;
+        margin: 40px 0px;
+        font-size: 22px;
+    }
+
+ 
+    .sproutquizapp-container-link {
+        margin-top: 70px;
+        font-size: 16px;
+        padding: 12px 25px;
+    } 
+}
+ @media (min-width: 769px) and (max-width: 1000px) {
+    .sproutquizapp-container-text {
+        width: 80% ;
+    }
+
+}
+/* quiz page start here */
+
+.sproutquizapp-quizs{
+    width: 50%;
+    background-color: rgb(57, 58, 47, 0.7);
+    margin: 0px auto;
+    padding: 80px 30px;
+    box-shadow: 0 0 5px #9a9b98; 
+}
+#sproutquizapp-questiontag {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.sproutquizapp-answerbuttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#sproutquizapp-answerbuttons button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#sproutquizapp-nextbtn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 9px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+}
+.correct {
+    background-color: #257023;
+    color: #fff;
+}
+
+.sproutquizapp-answerbuttons-btn:hover:not:not([disabled]){
+    background-color: rgb(63, 61, 62);
+    color: white;
+}
+.sproutquizapp-answerbuttons-btn:disabled {
+    cursor: no-drop;
+}
+
+.incorrect {
+    background-color: red;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .sproutquizapp-quizs {
+        width: 100%;
+        padding: 50px 15px;
+    }
+    
+    #sproutquizapp-questiontag {
+        margin-bottom: 25px;
+        font-size: 20px;
+        
+    }
+    
+    #sproutquizapp-answerbuttons button {
+        margin-bottom: 12px;
+        padding: 10px 16px;
+        font-size: 15px;
+    }
+    
+    #sproutquizapp-nextbtn {
+        padding: 7px 28px;
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1000px) {
+    .sproutquizapp-quizs {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

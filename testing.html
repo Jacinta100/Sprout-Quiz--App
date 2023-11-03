@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p class="sprout">sprout</p>
+  <p class="sprout">sprout</p>
+  <p class="sprout">sprout</p>
+  <p class="sprout">sprout</p>
+
+  <script>
+    var sprout = ["sprout", "sprout"];
+    // console.log(sprout);
+
+    function seed(){
+        for(i=0; i<sprout.length; i++){
+        var style = "font-size: 40px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
+        console.log("%c" + sprout[i], style);
+        }
+    }
+
+    seed();
+</script>
+</body>
+</html>
